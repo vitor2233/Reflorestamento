@@ -1,0 +1,16 @@
+﻿CREATE DATABASE bdVPaper
+USE MASTER
+DROP DATABASE bdVPaper
+GO
+USE bdVPaper
+
+CREATE TABLE Usuario(
+	codUsuario INT IDENTITY (1,1) PRIMARY KEY,
+    nome VARCHAR(60) NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    cpf VARCHAR(20) NOT NULL,
+    email VARCHAR(60) NOT NULL,
+    loginUsuario VARCHAR (60) NOT NULL,
+    senhaUsuario VARCHAR (50) NOT NULL,
+    tipoUsuario VARCHAR(50) NOT NULL
+);
